@@ -5,23 +5,23 @@
 
 class Employee {
 
-private:
+protected:
 	int social_security_number;
     std::string name;
     std::string email;
 
 public:
-	int getSocial_security_number();
+	virtual int getSocial_security_number();
 
-	void setSocial_security_number(int social_security_number);
+	virtual void setSocial_security_number(int social_security_number);
 
-    std::string getName();
+    virtual std::string getName();
 
-	void setName(std::string name);
+	virtual void setName(std::string name);
 
-    std::string getEmail();
+    virtual std::string getEmail();
 
-	void setEmail(std::string email);
+	virtual void setEmail(std::string email);
 };
 
 #endif

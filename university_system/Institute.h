@@ -8,6 +8,8 @@ private:
 
 public:
 	int get_number();
+    void set_number(int number);
+
 };
 
 #endif

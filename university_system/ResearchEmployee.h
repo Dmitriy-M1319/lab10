@@ -7,7 +7,7 @@
 
 class ResearchEmployee : Employee {
 
-private:
+protected:
 	Institute institute;
 	Project project;
 
@@ -17,6 +17,18 @@ public:
 	Institute getInstitute();
 
 	void setInstitute(Institute institute);
+
+    int getSocial_security_number() override;
+
+    void setSocial_security_number(int social_security_number) override;
+
+    std::string getName() override;
+
+    void setName(std::string name) override;
+
+    std::string getEmail() override;
+
+    void setEmail(std::string email) override;
 };
 
 #endif
